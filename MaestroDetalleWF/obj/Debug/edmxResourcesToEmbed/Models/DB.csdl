@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="MaestroDetalleModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="concepto">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="id_venta" Type="Int32" />
+    <Property Name="precioUnitario" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="cantidad" Type="Int32" />
+    <Property Name="descripcion" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Name="importe" Type="Decimal" Precision="18" Scale="2" />
+    <NavigationProperty Name="venta" Relationship="Self.FK_concepto_venta" FromRole="concepto" ToRole="venta" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="venta">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="total" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="fecha" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="concepto" Relationship="Self.FK_concepto_venta" FromRole="venta" ToRole="concepto" />
+  </EntityType>
+  <Association Name="FK_concepto_venta">
+    <End Role="venta" Type="Self.venta" Multiplicity="0..1" />
+    <End Role="concepto" Type="Self.concepto" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="venta">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="concepto">
+        <PropertyRef Name="id_venta" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="MaestroDetalleEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="concepto" EntityType="Self.concepto" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" />
+    <EntitySet Name="venta" EntityType="Self.venta" />
+    <AssociationSet Name="FK_concepto_venta" Association="Self.FK_concepto_venta">
+      <End Role="venta" EntitySet="venta" />
+      <End Role="concepto" EntitySet="concepto" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

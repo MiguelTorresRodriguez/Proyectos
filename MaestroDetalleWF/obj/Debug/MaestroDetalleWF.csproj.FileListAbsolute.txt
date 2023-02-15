@@ -1,0 +1,17 @@
+C:\Users\Miguel\source\repos\MaestroDetalleWF\MaestroDetalleWF\bin\Debug\MaestroDetalleWF.exe.config
+C:\Users\Miguel\source\repos\MaestroDetalleWF\MaestroDetalleWF\bin\Debug\MaestroDetalleWF.exe
+C:\Users\Miguel\source\repos\MaestroDetalleWF\MaestroDetalleWF\bin\Debug\MaestroDetalleWF.pdb
+C:\Users\Miguel\source\repos\MaestroDetalleWF\MaestroDetalleWF\obj\Debug\MaestroDetalleWF.csproj.AssemblyReference.cache
+C:\Users\Miguel\source\repos\MaestroDetalleWF\MaestroDetalleWF\obj\Debug\MaestroDetalleWF.csproj.SuggestedBindingRedirects.cache
+C:\Users\Miguel\source\repos\MaestroDetalleWF\MaestroDetalleWF\obj\Debug\MaestroDetalleWF.Form1.resources
+C:\Users\Miguel\source\repos\MaestroDetalleWF\MaestroDetalleWF\obj\Debug\MaestroDetalleWF.Properties.Resources.resources
+C:\Users\Miguel\source\repos\MaestroDetalleWF\MaestroDetalleWF\obj\Debug\MaestroDetalleWF.csproj.GenerateResource.cache
+C:\Users\Miguel\source\repos\MaestroDetalleWF\MaestroDetalleWF\obj\Debug\MaestroDetalleWF.csproj.CoreCompileInputs.cache
+C:\Users\Miguel\source\repos\MaestroDetalleWF\MaestroDetalleWF\obj\Debug\MaestroDetalleWF.exe
+C:\Users\Miguel\source\repos\MaestroDetalleWF\MaestroDetalleWF\obj\Debug\MaestroDetalleWF.pdb
+C:\Users\Miguel\source\repos\MaestroDetalleWF\MaestroDetalleWF\bin\Debug\EntityFramework.dll
+C:\Users\Miguel\source\repos\MaestroDetalleWF\MaestroDetalleWF\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Miguel\source\repos\MaestroDetalleWF\MaestroDetalleWF\bin\Debug\EntityFramework.xml
+C:\Users\Miguel\source\repos\MaestroDetalleWF\MaestroDetalleWF\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Miguel\source\repos\MaestroDetalleWF\MaestroDetalleWF\obj\Debug\MaestroDetalleWF.csproj.CopyComplete
+C:\Users\Miguel\source\repos\MaestroDetalleWF\MaestroDetalleWF\obj\Debug\MaestroDetalleWF.FrmVenta.resources
